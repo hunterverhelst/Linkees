@@ -7,6 +7,7 @@ import { ItemType } from "../ts";
 
 import { CHANNEL_TYPE_VS_COVER_IMAGE } from "./constant";
 import { CHANNEL_TYPES } from "../constants";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 function Linkees({
   headerAvatar,
@@ -22,7 +23,7 @@ function Linkees({
       <Header avatar={headerAvatar} name={name} />
       <div className="container row">
         {cardItems.map((item, i: number) => {
-          const coverImage: string =
+          const coverImage: string | IconDefinition =
             item.image ??
             CHANNEL_TYPE_VS_COVER_IMAGE[item.type] ??
             CHANNEL_TYPE_VS_COVER_IMAGE[CHANNEL_TYPES.WEBSITE];

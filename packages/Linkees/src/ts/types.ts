@@ -1,6 +1,7 @@
-import { CHANNEL_TYPES } from '../constants';
+import { CHANNEL_TYPES } from "../constants";
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 
-export type ThemeType = 'dark' | 'light';
+export type ThemeType = "dark" | "light";
 
 export type KnownChannelTypes =
   | typeof CHANNEL_TYPES.DRIBBLE
@@ -26,7 +27,7 @@ export type UnknownChannelItem = {
   type: UnknownChannelType;
   title: string;
   subtitle: string;
-  image: string;
+  image: string | IconDefinition;
   link: string;
 };
 
