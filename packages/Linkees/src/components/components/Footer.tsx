@@ -1,13 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import '../../css/skeleton.css';
-import '../../css/components.css';
+import "../../css/skeleton.css";
+import "../../css/components.css";
 
 function Footer(): JSX.Element {
   return (
     <div className="Footer container">
       <p>
-        Made with <span className="heart">❤️</span> by <a href={'https://twitter.com/heysagnik'}>Sagnik Sahoo</a>
+        Template Credit:{" "}
+        <a href={"https://github.com/heysagnik/Linkees"}>heysagnik/Linkees</a>
       </p>
     </div>
   );
